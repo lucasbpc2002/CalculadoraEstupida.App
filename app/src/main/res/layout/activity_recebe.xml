@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recebeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora_estupida"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#6007FF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="292dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/ok"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextVariavel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextVariavel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVariavel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="292dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/cancelar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOk"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonOk"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOk"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextVariavel"
+        android:layout_width="292dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/variavel"
+        android:textColor="#7E35FF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <TextView
+        android:id="@+id/labelVariavel"
+        android:layout_width="246dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/digite_a_variavel_abaixo"
+        android:textColor="#7E35FF"
+        android:textColorHighlight="#7E35FF"
+        android:textColorHint="#7E35FF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextVariavel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextVariavel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813" />
+</androidx.constraintlayout.widget.ConstraintLayout>

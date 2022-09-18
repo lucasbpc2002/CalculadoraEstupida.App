@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="set_variavel_x">set variavel x</string>
+    <string name="set_variavel_y">set variavel y</string>
+    <string name="calcular">Calcular</string>
+    <string name="x">X</string>
+    <string name="calculadora_estupida">Calculadora Estupida</string>
+    <string name="soma">soma:</string>
+    <string name="y">Y</string>
+    <string name="resultado">Resultado</string>
+    <string name="variavel_x">variavel X :</string>
+    <string name="variavel_y">Variavel Y</string>
+    <string name="ok">OK</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="name">Name</string>
+    <string name="variavelY">variavel Y:</string>
+    <string name="realizando_Calculos" />
+    <string name="variavel">Variavel</string>
+    <string name="digite_a_variavel_abaixo">digite a variavel abaixo</string>
+</resources>

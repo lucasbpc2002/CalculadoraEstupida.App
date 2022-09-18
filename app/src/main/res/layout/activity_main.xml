@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonSetVariavelX"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="292dp"
+        android:layout_height="80dp"
+        android:text="@string/set_variavel_x"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <Button
+        android:id="@+id/buttonSetVariavelY"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="292dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/set_variavel_y"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSetVariavelX"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/buttonSetVariavelX"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSetVariavelX"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="292dp"
+        android:layout_height="80dp"
+        android:text="@string/calcular"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSetVariavelY"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/buttonSetVariavelY"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSetVariavelY"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <TextView
+        android:id="@+id/textViewX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        tools:text="@string/x"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSetVariavelX"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/labelVariavelX"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/labelVariavelY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:text="@string/variavelY"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/labelVariavelX"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/labelVariavelX"
+        app:layout_constraintTop_toBottomOf="@+id/labelVariavelX"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/labelVariavelX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/variavel_x"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/resultado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewY"
+        app:layout_constraintStart_toStartOf="@+id/textViewY"
+        app:layout_constraintTop_toTopOf="@+id/labelSoma"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/y"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewX"
+        app:layout_constraintStart_toStartOf="@+id/textViewX"
+        app:layout_constraintTop_toTopOf="@+id/labelVariavelY" />
+
+    <TextView
+        android:id="@+id/labelSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/soma"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/labelVariavelY"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/labelVariavelY"
+        app:layout_constraintTop_toBottomOf="@+id/labelVariavelY"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora_estupida"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#6007FF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
